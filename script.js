@@ -63,7 +63,7 @@ function openEnvelope() {
 function bigCelebration(e) {
     e.stopPropagation(); // Prevent bubbling
     const btn = document.querySelector('.final-btn');
-    btn.innerText = "YAY! I Love You! 💖";
+    btn.innerText = "LAAMMUU PAGLI!! 💖";
     btn.style.backgroundColor = "#2ecc71";
     
     // Massive Confetti Explosion
@@ -87,4 +87,5 @@ function bigCelebration(e) {
             requestAnimationFrame(frame);
         }
     }());
+
 }
