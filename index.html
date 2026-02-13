@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Snehuu ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Premium Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Confetti Engine -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <!-- Floating Background Hearts -->
+    <div class="hearts-container" id="hearts-bg"></div>
+
+    <!-- Music Player -->
+    <div class="music-player" onclick="toggleMusic()">
+        <span class="icon">🎵</span>
+        <span class="text">Play Our Song</span>
+    </div>
+    <audio id="bg-music" loop>
+        <source src="aud.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- SECTION 1: The Intro -->
+    <header class="hero">
+        <div class="glass-card fade-in-up">
+            <h1 class="title">Hey, Snehuu <span class="heart-beat">❤️</span></h1>
+            <p class="subtitle">I made this just for you...</p>
+            <div class="scroll-down">↓ Scroll Down ↓</div>
+        </div>
+    </header>
+
+    <!-- SECTION 2: The Gallery (7 Pics) -->
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Journey</h2>
+            
+            <!-- Photo 1 -->
+            <div class="memory-card reveal">
+                <div class="img-wrapper">
+                    <img src="pic1.jpeg" alt="Us">
+                </div>
+                <p class="caption">The beginning of something beautiful.</p>
+            </div>
+
+            <!-- Photo 2 -->
+            <div class="memory-card reveal">
+                <div class="img-wrapper">
+                    <img src="pic2.jpg" alt="Us">
+                </div>
+                <p class="caption">Your smile makes my day.</p>
+            </div>
+
+            <!-- Photo 3 -->
+            <div class="memory-card reveal">
+                <div class="img-wrapper">
+                    <img src="pic3.jpg" alt="Us">
+                </div>
+                <p class="caption">Adventures with you.</p>
+            </div>
+
+            <!-- Photo 4 -->
+            <div class="memory-card reveal">
+                <div class="img-wrapper">
+                    <img src="pic4.jpg" alt="Us">
+                </div>
+                <p class="caption">My favorite person.</p>
+            </div>
+
+            <!-- Photo 5 -->
+            <div class="memory-card reveal">
+                <div class="img-wrapper">
+                    <img src="pic5.jpg" alt="Us">
+                </div>
+                <p class="caption">Every moment is magic.</p>
+            </div>
+
+            <!-- Photo 6 -->
+            <div class="memory-card reveal">
+                <div class="img-wrapper">
+                    <img src="pic6.jpg" alt="Us">
+                </div>
+                <p class="caption">Better together.</p>
+            </div>
+
+            <!-- Photo 7 -->
+            <div class="memory-card reveal">
+                <div class="img-wrapper">
+                    <img src="pic7.jpeg" alt="Us">
+                </div>
+                <p class="caption">Forever & Always.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: The Love Letter -->
+    <section class="letter-section">
+        <div class="envelope-container" onclick="openEnvelope()">
+            <div id="envelope" class="envelope bounce">
+                <div class="front">
+                    <div class="stamp">❤️</div>
+                    <div class="address">For Snehuu</div>
+                    <div class="instruction">(Tap to Open)</div>
+                </div>
+            </div>
+            
+            <div id="letter" class="letter-content glass-card hidden">
+                <h2>Happy Valentine's Day!</h2>
+                <p class="letter-body">
+                    My Dearest Snehuu,<br><br>
+                    I wanted to do something special to show you how much you mean to me. Looking at these photos, I realize how lucky I am to have you in my life. You are my best friend, my safe place, and my EVERYTHING!!.<br><br>
+                    LAMMUUU you for being you.
+                </p>
+                <p class="signature">Love, <br> (Your Name)</p>
+                
+                <button class="final-btn" onclick="bigCelebration(event)">Be My Valentine? 🌹</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ and Code</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
